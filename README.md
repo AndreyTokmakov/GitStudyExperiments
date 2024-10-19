@@ -1,13 +1,13 @@
 # GitStudyExperiments
 Git study and experiments
 
-1. [Configuration (Global)](#Configuration (Global))
-2. [Configuration (Local - Repository level)](#Configuration (Local - Repository level))
-3. [Delete brances](#Delete brances)
-4. [Commit History](#Commit History)
+1. [Configuration (Global)](#configuration_global)
+2. [Configuration (Local - Repository level)](#configuration_local)
+3. [Delete](#delete_brances)
+4. [Commit History](#commit_history)
 
 
-<a name="Configuration (Global)"></a>
+<a name="configuration_global"></a>
 ###  Configuration (Global)
 
 View global configuration:
@@ -26,7 +26,7 @@ Unset (global): (delete global 'user.name' and 'user.email' parameters)
     git config --global --unset user.email
 
 
-<a name="Configuration (Local - Repository level)"></a>
+<a name="configuration_local"></a>
 ###  Configuration (Local - Repository level)
 
 View configuration:
@@ -38,13 +38,13 @@ Set 'name' and 'email'
     git config user.name "Your Name"
     git config user.email "username@gmail.com"
 
-<a name="Delete brances"></a>
+<a name="delete_brances"></a>
 ###  Delete brances
 
     git branch -D some_network_waiting_utilities                     #  Delete a local branch
     git push origin --delete some_network_waiting_utilities          #  Remove a remote branch 
 
-<a name="Commit History></a>
+<a name="commit_history"></a>
 ###  Commit History
 
 Check the detailed changes of each file:
