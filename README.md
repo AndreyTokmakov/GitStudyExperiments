@@ -1,7 +1,13 @@
 # GitStudyExperiments
 Git study and experiments
 
+1. [Configuration (Global)](#Configuration (Global))
+2. [Configuration (Local - Repository level)](#Configuration (Local - Repository level))
+3. [Delete brances](#Delete brances)
+4. [Commit History](#Commit History)
 
+
+<a name="Configuration (Global)"></a>
 ###  Configuration (Global)
 
 View global configuration:
@@ -36,3 +42,27 @@ Set 'name' and 'email'
 
     git branch -D some_network_waiting_utilities                     #  Delete a local branch
     git push origin --delete some_network_waiting_utilities          #  Remove a remote branch 
+
+
+###  Commit History:
+
+Check the detailed changes of each file:
+
+	git log -p
+
+Check statistics:
+
+	git log --stat
+
+Pretty history:
+
+	git log --pretty=format:"%h - %an, %ar : %s" --all
+
+For example, if you want to see which commands changed the text files in the Get source code in October 2008, </br>
+authored by 'Junio Hamano' and which were not merge commits, you can run the following command:
+
+	git log --pretty="%h - %s" --author='Junio Hamano' --since="2008-10-01" --before="2008-11-01" --no-merges -- t/
+
+Visualizing the commit history:
+
+	git log --graph --oneline --all
