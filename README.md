@@ -10,9 +10,10 @@ Git study and experiments
 7.  [Make commit | Commit changes](#make_commit)
 8.  [Check difference](#check_difference)
 9.  [List Branches | Check current branch](#list_branches)
-10.  [Delete](#delete_brances)
-11.  [Clean](#clean_up)
-12. [Commit History](#commit_history)
+10. [Delete](#delete_brances)
+11. [Clean](#clean_up)
+12. [Log - Commit History](#commit_history)
+13. [Git show](#git_show)
 
 
 <a name="init_clone_pull"></a>
@@ -44,7 +45,7 @@ Download updates from the repository BUT DO NOT update the local changes - do no
 	git fetch --verbose         # Fetch with some debug/verbose output
 	git fetch --progress        # Progress status is reported on the standard error stream
 
-Show what would be done, without making any changes.
+Show what would be done, without making any changes. (This lets you see what would be fetched without actually downloading data.)
 
 	git fetch --dry-run
 
@@ -140,7 +141,7 @@ Comparison with the last commit
 
 Compare two spesific commits:
 
-	git log --oneline    # вывести список коммитов и их идентификаторы:
+	git log --oneline    # output a list of commits and their IDs:
 	git diff 38bb909 93bb5de
 
 
@@ -160,7 +161,7 @@ See which branches are available.
 	git branch -a
 
 <a name="delete_brances"></a>
-###  Delete brances
+### Delete brances
 
     git branch -D some_network_waiting_utilities                     #  Delete a local branch
     git push origin --delete some_network_waiting_utilities          #  Remove a remote branch 
@@ -176,9 +177,8 @@ Don’t actually remove anything, just show what would be done
 
 	git clean --dry-run
 
-
 <a name="commit_history"></a>
-###  Commit History
+### Commit History
 
 Check the detailed changes of each file:
 
@@ -200,3 +200,14 @@ authored by 'Junio Hamano' and which were not merge commits, you can run the fol
 Visualizing the commit history:
 
 	git log --graph --oneline --all
+
+<a name="git_show"></a>
+### Git show
+
+Show commit (using git hash) ('git log --oneline')
+
+	git show 390e231  -n 1 --graph
+	
+see the detailed changes of a specific commit:
+
+	git show 1af17e73721dbe0c40011b82ed4bb1a7dbe3ce29
