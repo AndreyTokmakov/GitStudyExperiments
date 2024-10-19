@@ -118,6 +118,11 @@ Compare two spesific commits:
 	git log --oneline    # вывести список коммитов и их идентификаторы:
 	git diff 38bb909 93bb5de
 
+
+To compare specific files between two branches:</br>Example: compare Utilities.py file from <b>main</b> and <b>develop</b>
+
+	git diff main develop Utilities.py	
+
 <a name="list_branches"></a>
 ###  List Branches | Check current branch
 
