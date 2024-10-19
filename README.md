@@ -1,15 +1,17 @@
 # GitStudyExperiments
 Git study and experiments
 
-1. [Init, Clone, Pull repository](#init_clone_pull)
-2. [Configuration (Global)](#configuration_global)
-3. [Configuration (Local - Repository level)](#configuration_local)
-4. [Add | Stage files](#add_stage_files)
-5. [Make commit | Commit changes](#make_commit)
-6. [Check difference](#check_difference)
-7. [List Branches | Check current branch](#list_branches)
-8. [Delete](#delete_brances)
-9. [Commit History](#commit_history)
+1.  [Init, Clone, Pull repository](#init_clone_pull)
+2.  [Configuration (Global)](#configuration_global)
+3.  [Configuration (Local - Repository level)](#configuration_local)
+4.  [Show working status](#show_working_status)
+5.  [Add | Stage files](#add_stage_files)
+6.  [Make commit | Commit changes](#make_commit)
+7.  [Check difference](#check_difference)
+8.  [List Branches | Check current branch](#list_branches)
+9.  [Delete](#delete_brances)
+10.  [Clean](#clean_up)
+11. [Commit History](#commit_history)
 
 
 <a name="init_clone_pull"></a>
@@ -61,6 +63,13 @@ Set 'name' and 'email'
 
     git config user.name "Your Name"
     git config user.email "username@gmail.com"
+
+<a name="show_working_status"></a>
+### Show working status
+
+Show the working tree status: Displays paths that have differences between the index file and the current HEAD commit
+
+	 git status
 
 
 <a name="add_stage_files"></a>
@@ -139,6 +148,18 @@ See which branches are available.
 
     git branch -D some_network_waiting_utilities                     #  Delete a local branch
     git push origin --delete some_network_waiting_utilities          #  Remove a remote branch 
+
+<a name="clean_up"></a>
+### Clean
+
+Quickly remove unwanted files (not tracked by Git)
+
+	git clean -fd
+
+Don’t actually remove anything, just show what would be done
+
+	git clean --dry-run
+
 
 <a name="commit_history"></a>
 ###  Commit History
