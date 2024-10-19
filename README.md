@@ -5,8 +5,9 @@ Git study and experiments
 2. [Configuration (Global)](#configuration_global)
 3. [Configuration (Local - Repository level)](#configuration_local)
 4. [Add | Stage files](#add_stage_files)
-5. [Delete](#delete_brances)
-6. [Commit History](#commit_history)
+5. [List Branches | Check current branch](#list_branches)
+6. [Delete](#delete_brances)
+7. [Commit History](#commit_history)
 
 
 <a name="init_clone_pull"></a>
@@ -88,6 +89,16 @@ add all files in docs directory
 
 	git add docs/
 
+<a name="list_branches"></a>
+###  List Branches | Check current branch
+
+Check current branch
+
+	git branch
+
+See which branches are available.
+
+	git branch -a
 
 <a name="delete_brances"></a>
 ###  Delete brances
