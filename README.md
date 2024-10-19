@@ -5,9 +5,10 @@ Git study and experiments
 2. [Configuration (Global)](#configuration_global)
 3. [Configuration (Local - Repository level)](#configuration_local)
 4. [Add | Stage files](#add_stage_files)
-5. [List Branches | Check current branch](#list_branches)
-6. [Delete](#delete_brances)
-7. [Commit History](#commit_history)
+5. [Make commit | Commit changes](#make_commit)
+6. [List Branches | Check current branch](#list_branches)
+7. [Delete](#delete_brances)
+8. [Commit History](#commit_history)
 
 
 <a name="init_clone_pull"></a>
@@ -88,6 +89,21 @@ add all txt files in docs directory
 add all files in docs directory
 
 	git add docs/
+
+<a name="make_commit"></a>
+### Make commit | Commit changes
+
+Commit staged chages:
+
+	git commit
+
+Commit staged chages with comment:
+
+	git commit -m "Some commit message"
+
+Commit staged chages with comment (link with JIRA task):
+
+	git commit -m "TSK-2045: Some commit message"
 
 <a name="list_branches"></a>
 ###  List Branches | Check current branch
