@@ -1,10 +1,31 @@
 # GitStudyExperiments
 Git study and experiments
 
-1. [Configuration (Global)](#configuration_global)
-2. [Configuration (Local - Repository level)](#configuration_local)
-3. [Delete](#delete_brances)
-4. [Commit History](#commit_history)
+1. [Init, Clone, Pull repository](#init_clone_pull)
+2. [Configuration (Global)](#configuration_global)
+3. [Configuration (Local - Repository level)](#configuration_local)
+4. [Add | Stage files](#add_stage_files)
+5. [Delete](#delete_brances)
+6. [Commit History](#commit_history)
+
+
+<a name="init_clone_pull"></a>
+###  Init, Clone, Pull repository
+Initialize local git repository
+
+	git init
+	
+Clone any repository
+
+	git clone 'git@github.com:AndreyTokmakov/GitStudyExperiments.git'
+
+Add remote Name/URL
+
+	git remote add origin 'git@github.com:AndreyTokmakov/GitStudyExperiments.git'
+	
+Update the current working directory
+
+	git pull origin master	
 
 
 <a name="configuration_global"></a>
@@ -37,6 +58,36 @@ Set 'name' and 'email'
 
     git config user.name "Your Name"
     git config user.email "username@gmail.com"
+
+
+<a name="add_stage_files"></a>
+###  Add | Stage files
+
+Stages All
+	git add --all
+	git add -A
+	git add -A .
+
+Stages New & Modified But Without Deleted [Add all uncommitted files to the repository]
+
+	git add . 
+
+Stages Modified & Deleted But Without New
+
+	git add -u 
+
+add all the txt files in current directory
+
+	git add *.txt 
+
+add all txt files in docs directory
+
+	git add docs/*/txt
+
+add all files in docs directory
+
+	git add docs/
+
 
 <a name="delete_brances"></a>
 ###  Delete brances
