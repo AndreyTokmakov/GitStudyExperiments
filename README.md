@@ -31,7 +31,10 @@ Add remote Name/URL
 	
 Update the current working directory
 
-	git pull origin master	
+	git pull origin main	
+	git pull --verbose           # Fetch with some debug/verbose output
+	git pull --dry-run           # Show what would be done, without making any changes.
+	git pull --progress          # Progress status is reported on the standard error stream
 
 <a name="fetch_from_repository"></a>
 ### Fetch / download objects from repository
