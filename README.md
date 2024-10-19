@@ -2,16 +2,17 @@
 Git study and experiments
 
 1.  [Init, Clone, Pull repository](#init_clone_pull)
-2.  [Configuration (Global)](#configuration_global)
-3.  [Configuration (Local - Repository level)](#configuration_local)
-4.  [Show working status](#show_working_status)
-5.  [Add | Stage files](#add_stage_files)
-6.  [Make commit | Commit changes](#make_commit)
-7.  [Check difference](#check_difference)
-8.  [List Branches | Check current branch](#list_branches)
-9.  [Delete](#delete_brances)
-10.  [Clean](#clean_up)
-11. [Commit History](#commit_history)
+2.  [Fetch / download objects from repository](#fetch_from_repository)
+3.  [Configuration (Global)](#configuration_global)
+4.  [Configuration (Local - Repository level)](#configuration_local)
+5.  [Show working status](#show_working_status)
+6.  [Add | Stage files](#add_stage_files)
+7.  [Make commit | Commit changes](#make_commit)
+8.  [Check difference](#check_difference)
+9.  [List Branches | Check current branch](#list_branches)
+10.  [Delete](#delete_brances)
+11.  [Clean](#clean_up)
+12. [Commit History](#commit_history)
 
 
 <a name="init_clone_pull"></a>
@@ -31,6 +32,18 @@ Add remote Name/URL
 Update the current working directory
 
 	git pull origin master	
+
+<a name="fetch_from_repository"></a>
+### Fetch / download objects from repository
+Download updates from the repository BUT DO NOT update the local changes - do not overwrite:
+
+	git fetch
+	git fetch --verbose         # Fetch with some debug/verbose output
+	git fetch --progress        # Progress status is reported on the standard error stream
+
+Show what would be done, without making any changes.
+
+	git fetch --dry-run
 
 
 <a name="configuration_global"></a>
