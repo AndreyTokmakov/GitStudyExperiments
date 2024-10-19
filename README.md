@@ -6,9 +6,10 @@ Git study and experiments
 3. [Configuration (Local - Repository level)](#configuration_local)
 4. [Add | Stage files](#add_stage_files)
 5. [Make commit | Commit changes](#make_commit)
-6. [List Branches | Check current branch](#list_branches)
-7. [Delete](#delete_brances)
-8. [Commit History](#commit_history)
+6. [Check difference](#check_difference)
+7. [List Branches | Check current branch](#list_branches)
+8. [Delete](#delete_brances)
+9. [Commit History](#commit_history)
 
 
 <a name="init_clone_pull"></a>
@@ -104,6 +105,18 @@ Commit staged chages with comment:
 Commit staged chages with comment (link with JIRA task):
 
 	git commit -m "TSK-2045: Some commit message"
+
+<a name="check_difference"></a>
+### Check differences
+
+Comparison with the last commit
+
+	git diff
+
+Compare two spesific commits:
+
+	git log --oneline    # вывести список коммитов и их идентификаторы:
+	git diff 38bb909 93bb5de
 
 <a name="list_branches"></a>
 ###  List Branches | Check current branch
