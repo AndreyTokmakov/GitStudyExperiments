@@ -26,6 +26,7 @@ Unset (global): (delete global 'user.name' and 'user.email' parameters)
     git config --global --unset user.email
 
 
+<a name="Configuration (Local - Repository level)"></a>
 ###  Configuration (Local - Repository level)
 
 View configuration:
@@ -37,14 +38,14 @@ Set 'name' and 'email'
     git config user.name "Your Name"
     git config user.email "username@gmail.com"
 
-
-###  Delete brances:
+<a name="Delete brances"></a>
+###  Delete brances
 
     git branch -D some_network_waiting_utilities                     #  Delete a local branch
     git push origin --delete some_network_waiting_utilities          #  Remove a remote branch 
 
-
-###  Commit History:
+<a name="Commit History></a>
+###  Commit History
 
 Check the detailed changes of each file:
 
