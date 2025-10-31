@@ -1,3 +1,3 @@
 
 def get_info():
-    return 'Info'
+    return 'Info-Dev'
